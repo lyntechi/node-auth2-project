@@ -7,5 +7,5 @@ const server = express();
 server.use(helmet());
 server.use(express.json());
 server.use("/", welcomeRouter);
-server.use("/api/auth")
+server.use("/api/auth", authRouter);
 module.exports = server;
